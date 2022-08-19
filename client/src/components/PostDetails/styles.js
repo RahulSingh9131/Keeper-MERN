@@ -1,0 +1,45 @@
+import { makeStyles } from "@material-ui/core/styles";
+
+export default makeStyles((theme)=>({
+    media:{
+        borderRadius:'20px',
+        objectFit:'cover',
+        width:'100%',
+        maxHeigth:'600px',
+    },
+    card:{
+        display:'flex',
+        width:'100%',
+        [theme.breakpoints.down('sm')]:{
+            flexWrap:'wrap',
+            flexDirection:'column',
+        },
+    },
+    section:{
+        borderRadius:'20px',
+        margin:'10px',
+        flex:.6,
+    },
+    imageSection:{
+        marginLeft:'20px',
+        flex:.4,
+        [theme.breakpoints.down('sm')]:{
+            marginLeft:0,
+        },
+    },
+    recommendedPosts:{
+        display:'flex',
+        [theme.breakpoints.down('sm')]:{
+            flexDirection:'column',
+        },
+    },
+    commentsOuterContainer:{
+        display:'flex',
+        justifyContent:'space-between',
+    },
+    commentsInnerContainer:{
+        heigth:'200px',
+        overflow:'auto',
+        marginRigth:'30px',
+    }
+}));
